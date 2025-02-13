@@ -1,2 +1,2 @@
 #!/bin/bash
-OFILE=$(read $CFILE | tr ".c" ".o) ; gcc -c -o $OFILE $CFILE 
+OFILE=$(cat $CFILE | tr ".c" ".o") ; gcc -c -o $OFILE $CFILE 
