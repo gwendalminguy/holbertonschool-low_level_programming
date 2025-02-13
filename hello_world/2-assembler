@@ -1,0 +1,2 @@
+#!/bin/bash
+SFILE=$(echo $CFILE | tr ".c" ".s" ) ; gcc -S $SFILE $CFILE
