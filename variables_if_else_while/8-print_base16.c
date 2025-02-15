@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (n <= 57 || n >= 97)
 		putchar(n);
-    }
+	}
 
 	putchar('\n');
 
