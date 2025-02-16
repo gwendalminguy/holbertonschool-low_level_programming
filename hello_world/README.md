@@ -1,2 +1,2 @@
 ## Hello World
-This project is about learning to use the gcc compiler and some of its features, the C syntax along with few basic functions (such as printf, puts and sizeof) and simple variables, and the betty coding style.
+This project is about learning to use the gcc compiler and some of its features (preprocessing, compiling, assembling, linking), the C syntax along with few basic functions (such as printf, puts, sizeof), return values, types and variables, and the betty coding style.
