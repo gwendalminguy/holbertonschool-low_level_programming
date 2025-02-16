@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * main - Prints double two digits combinations
@@ -13,6 +14,7 @@ int main(void)
 	int v;
 	int x;
 	int y;
+	bool comma = false;
 
 	for (u = 48 ; u <= 57 ; u++)
 	{
@@ -29,11 +31,13 @@ int main(void)
 						putchar(32);
 						putchar(x);
 						putchar(y);
-						if (10 * (u - 48) + (v - 48) < 98)
-						{
-							putchar(44);
-							putchar(32);
-						}
+						comma = true;
+					}
+					if (10 * (u - 48) + (v - 48) < 98 && comma == true)
+					{
+						putchar(44);
+						putchar(32);
+						comma = false;
 					}
 				}
 			}
