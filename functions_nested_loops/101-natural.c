@@ -2,8 +2,10 @@
 
 /**
  * main - Adds all multiples of 3 and 5 below 1024 and prints the result
+ * 
+ * Return: 0
  */
-void main(void)
+int main(void)
 {
 	int i;
 	int s = 0;
@@ -15,4 +17,6 @@ void main(void)
 	}
 
 	printf("%d\n", s);
+
+	return (0);
 }
