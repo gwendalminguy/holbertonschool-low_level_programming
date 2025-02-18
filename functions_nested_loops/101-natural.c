@@ -2,7 +2,7 @@
 
 /**
  * main - Adds all multiples of 3 and 5 below 1024 and prints the result
- * 
+ *
  * Return: 0
  */
 int main(void)
