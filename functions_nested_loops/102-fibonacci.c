@@ -8,8 +8,8 @@
 int main(void)
 {
 	int i;
-	long a = 1;
-	long b = 2;
+	long a = 0;
+	long b = 1;
 	long c;
 
 	for (i = 0 ; i < 50 ; i++)
