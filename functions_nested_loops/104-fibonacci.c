@@ -22,7 +22,6 @@ int main(void)
 
 		if (i != 97)
 			printf(", ");
-	putchar('\n');
 	}
 
 	putchar('\n');
