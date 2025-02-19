@@ -17,11 +17,14 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		
-		printf("%.0Lf", c);
 
 		if (i != 97)
+		{
+			printf("%.0Lf", c);
 			printf(", ");
+		}
+		else
+			printf("%.0Lf", c + 2);
 	}
 
 	putchar('\n');
