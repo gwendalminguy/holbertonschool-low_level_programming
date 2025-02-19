@@ -6,7 +6,7 @@ This project is about learning to use nested loops, and header files with protot
 
 * _putchar.c, the definition of a custom putchar function.
 
-* 0-putchar.c,
+* 0-putchar.c, a function printing "_putchar".
 
 * 1-alphabet.c, a function printing the alphabet in lowercase.
 
