@@ -8,20 +8,21 @@
 int main(void)
 {
 	int i;
-	unsigned long a = 0;
-	unsigned long b = 1;
-	unsigned long c;
+	long double a = 0;
+	long double b = 1;
+	long double c;
 
 	for (i = 0 ; i < 98 ; i++)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-
-		printf("%lu", c);
+		
+		printf("%.0Lf", c);
 
 		if (i != 97)
 			printf(", ");
+	putchar('\n');
 	}
 
 	putchar('\n');
