@@ -17,7 +17,7 @@ void print_number(int n)
 	}
 	if (n >= 1000)
 	{
-		if (n % 10000 > 1000)
+		if (n % 10000 >= 1000)
 			milliers = (n / 1000) % 1000;
 		else
 			milliers = 0;
@@ -25,7 +25,7 @@ void print_number(int n)
 	}
 	if (n >= 100)
 	{
-		if (n % 1000 > 100)
+		if (n % 1000 >= 100)
 			centaines = (n / 100) % 100;
 		else
 			centaines = 0;
@@ -33,7 +33,7 @@ void print_number(int n)
 	}
 	if (n >= 10)
 	{
-		if (n % 100 > 10)
+		if (n % 100 >= 10)
 			dizaines = (n / 10) % 10;
 		else
 			dizaines = 0;
