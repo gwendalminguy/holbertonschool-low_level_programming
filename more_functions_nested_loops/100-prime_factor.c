@@ -8,27 +8,33 @@
  */
 int main(void)
 {
-	long x = 612852475143;
-	long div = sqrt(x);
 	int is_prime_factor = 0;
-	int i;
+	long x = 612852475143;
+	long div_a;
+	long div_b;
+	long i;
 
 	while (!is_prime_factor)
 	{
-		if (x % div == 0)
+		for (div_a = 2 ; div_a < sqrt(x) ; div_a++)
 		{
-			for (i = 2 ; i < div ; i++)
+			if (x % div_a == 0)
 			{
-				if (div % i == 0)
+				div_b = x / div_a;
+
+				for (i = 2 ; i <= sqrt(div_b) + 1 ; i++)
 				{
-					printf("%ld\n", div);
-					is_prime_factor = 1;
-					break;
+					if (div_b % i == 0 && i != sqrt(div_b))
+						break;
+					else if (i >= sqrt(div_b))
+					{
+						printf("%ld\n", div_b);
+						is_prime_factor = 1;
+						break;
+					}
 				}
 			}
 		}
-
-		div--;
 	}
 
 	return (0);
