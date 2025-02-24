@@ -26,4 +26,6 @@ This project is about learning to use more nested loops, and header files with p
 
 * [10-print_triangle.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/10-print_triangle.c), a function printing a triangle of any given size.
 
-* [100-prime_factor](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/100-prime_factor.c), a function printing the highest prime factor of 612852475143.
+* [100-prime_factor.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/100-prime_factor.c), a function printing the highest prime factor of 612852475143.
+
+* [101-print_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/101-print_number.c), a function printing any integer up to 9999 with putchar only.
