@@ -6,18 +6,14 @@
  */
 void print_number(int n)
 {
-	int length;
-	int digit;
-	int power;
-	int i;
-	int j;
+	int length, digit, power;
+	int i, j;
 
 	if (n < 0)
 	{
 		_putchar(45);
 		n = -n;
 	}
-
 	if (n >= 1000000000)
 		length = 10;
 	else if (n >= 100000000)
@@ -44,7 +40,6 @@ void print_number(int n)
 		power = 1;
 		for (j = 0 ; j < i - 1 ; j++)
 			power *= 10;
-
 		if (n % (power * 10) >= power)
 			digit = (n / power) % 10;
 		else
