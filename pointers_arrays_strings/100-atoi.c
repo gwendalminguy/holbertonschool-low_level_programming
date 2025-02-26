@@ -12,8 +12,8 @@ int _atoi(char *s)
 	int i;
 	int length = _strlen(s);
 	int sign = 1;
-	int start = 0;
-	int end = 0;
+	int start = -1;
+	int end;
 	int number = 0;
 	
 	/* Getting the sign, the starting index and the ending index */
@@ -31,7 +31,7 @@ int _atoi(char *s)
 	}
 	
 	/* Going through each digit and updating the number to output */
-	if (start != end)
+	if (start >= 0)
 	{
 		for (i = start ; i <= end ; i++)
 			number = number * 10 + (s[i] - 48);
