@@ -12,9 +12,11 @@ int _atoi(char *s)
 	int i;
 	int length = _strlen(s);
 	int sign = 1;
-	int start, end;
+	int start = 0;
+	int end = 0;
 	int number = 0;
-
+	
+	/* Getting the sign, the starting index and the ending index */
 	for (i = 0 ; i < length ; i++)
 	{
 		if (s[i] == '-')
@@ -27,14 +29,18 @@ int _atoi(char *s)
 			break;
 		}
 	}
-
-	for (i = start ; i <= end ; i++)
+	
+	/* Going through each digit and updating the number to output */
+	if (start != end)
 	{
-		number = number * 10 + (s[i] - 48);
-	}
+		for (i = start ; i <= end ; i++)
+			number = number * 10 + (s[i] - 48);
 
-	if (sign < 0)
-		number = -number;
+		if (sign < 0)
+			number = -number;
+	}
+	else
+		number = 0;
 
 	return (number);
 }
