@@ -30,7 +30,7 @@ int _atoi(char *s)
 		}
 	}
 
-	/* Going through each digit and updating the number to output */
+	/* Going through each digit and updating the number to return */
 	if (start >= 0)
 	{
 		for (i = start ; i <= end ; i++)
@@ -39,8 +39,6 @@ int _atoi(char *s)
 		if (sign < 0)
 			number = -number;
 	}
-	else
-		number = 0;
 
 	return (number);
 }
