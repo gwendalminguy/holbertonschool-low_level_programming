@@ -15,7 +15,7 @@ int _atoi(char *s)
 	int start = -1;
 	int end;
 	int number = 0;
-	
+
 	/* Getting the sign, the starting index and the ending index */
 	for (i = 0 ; i < length ; i++)
 	{
@@ -29,7 +29,7 @@ int _atoi(char *s)
 			break;
 		}
 	}
-	
+
 	/* Going through each digit and updating the number to output */
 	if (start >= 0)
 	{
