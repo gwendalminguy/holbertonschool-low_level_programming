@@ -9,21 +9,24 @@
 char *rot13(char *str)
 {
 	int i = 0;
+	int shift;
 
 	while (str[i] != '\0')
 	{
 		while ((str[i] > 64 && str[i] < 91) || (str[i] > 96 && str[i] < 123))
 		{
+			/* Negative shift by default */
+			shift = -13;
+
+			/* Switching to positive shift if letter in first half of alphabet */
 			if ((str[i] > 64 && str[i] < 78) || (str[i] > 96 && str[i] < 110))
 			{
-				str[i] += 13;
-				break;
+				shift = 13;
 			}
-			else
-			{
-				str[i] -= 13;
-				break;
-			}
+
+			str[i] += shift;
+
+			break;
 		}
 
 		i++;
