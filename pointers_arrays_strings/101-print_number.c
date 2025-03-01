@@ -14,11 +14,11 @@ void print_number(int n)
 		_putchar(45);
 		n = -n;
 	}
-	else if (n == 0)
-		length = 1;
 
 	/* Getting the number of digits of n */
-	if (n != 0)
+	if (n == 0)
+		length = 1;
+	else
 	{
 		length = 0;
 		while (n / x != 0)
