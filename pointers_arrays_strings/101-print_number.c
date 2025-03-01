@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * print_number - Prints any integer with putchar only
@@ -17,7 +16,7 @@ void print_number(int n)
 	}
 	else if (n == 0)
 		length = 1;
-	
+
 	/* Getting the number of digits of n */
 	if (n != 0)
 	{
