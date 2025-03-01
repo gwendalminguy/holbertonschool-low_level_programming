@@ -8,7 +8,7 @@
 void print_number(int n)
 {
 	int length, digit, power;
-	int i, j;
+	int i, j, x = 1;
 
 	if (n < 0)
 	{
@@ -20,7 +20,14 @@ void print_number(int n)
 	
 	/* Getting the number of digits of n */
 	if (n != 0)
-		length = floor(log10(n)) + 1;
+	{
+		length = 0;
+		while (n / x != 0)
+		{
+			x *= 10;
+			length++;
+		}
+	}
 
 	for (i = length ; i > 0 ; i--)
 	{
