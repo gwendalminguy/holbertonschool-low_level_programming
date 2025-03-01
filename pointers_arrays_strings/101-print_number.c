@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * print_number - Prints any integer up to 9999 with putchar only
@@ -14,26 +15,11 @@ void print_number(int n)
 		_putchar(45);
 		n = -n;
 	}
-	if (n >= 1000000000)
-		length = 10;
-	else if (n >= 100000000)
-		length = 9;
-	else if (n >= 10000000)
-		length = 8;
-	else if (n >= 1000000)
-		length = 7;
-	else if (n >= 100000)
-		length = 6;
-	else if (n >= 10000)
-		length = 5;
-	else if (n >= 1000)
-		length = 4;
-	else if (n >= 100)
-		length = 3;
-	else if (n >= 10)
-		length = 2;
-	else
-		length = 1;
+	else if (n = 0)
+		n = 0;
+	
+	/* Getting the number of digits of n */
+	length = floor(log10(n)) + 1;
 
 	for (i = length ; i > 0 ; i--)
 	{
