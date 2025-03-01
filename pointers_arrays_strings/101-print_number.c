@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * print_number - Prints any integer up to 9999 with putchar only
+ * print_number - Prints any integer with putchar only
  * @n: Integer
  */
 void print_number(int n)
@@ -15,11 +15,12 @@ void print_number(int n)
 		_putchar(45);
 		n = -n;
 	}
-	else if (n = 0)
-		n = 0;
+	else if (n == 0)
+		length = 1;
 	
 	/* Getting the number of digits of n */
-	length = floor(log10(n)) + 1;
+	if (n != 0)
+		length = floor(log10(n)) + 1;
 
 	for (i = length ; i > 0 ; i--)
 	{
