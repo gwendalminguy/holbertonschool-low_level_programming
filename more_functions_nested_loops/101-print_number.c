@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - Prints any integer up to 9999 with putchar only
+ * print_number - Prints any integer with putchar only
  * @n: Integer
  */
 void print_number(int n)
