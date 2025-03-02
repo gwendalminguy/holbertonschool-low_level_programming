@@ -28,6 +28,7 @@ void print_number(int n)
 		}
 	}
 
+	/* Printing each digit of n */
 	for (i = length ; i > 0 ; i--)
 	{
 		power = 1;
