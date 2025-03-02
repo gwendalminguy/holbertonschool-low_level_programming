@@ -28,6 +28,8 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [100-atoi.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-atoi.c), a function converting the first number in a string to an integer.
 
+* [101-keygen.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-keygen.c), a function generating random valid passwords for [101-crackme](https://github.com/hs-hq/0x04.c/blob/main/101-crackme) file.
+
 * [0-strcat.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/0-strcat.c), a function concatenating two strings.
 
 * [1-strncat.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/1-strncat.c), a function concatenating n first characters of a string to another.
