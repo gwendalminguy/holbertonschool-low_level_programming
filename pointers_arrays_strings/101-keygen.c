@@ -9,8 +9,7 @@
 int main(void)
 {
 	char key[64];
-	unsigned int num;
-	int sum, i, j = 1;
+	unsigned int num, sum, i, j = 1;
 
 	srand(time(0));
 
@@ -38,4 +37,3 @@ int main(void)
 
 	return (0);
 }
-
