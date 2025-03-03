@@ -32,7 +32,10 @@ char *_strpbrk(char *s, char *accept)
 			break;
 	}
 
-	ptr = &s[i];
+	if (compare == 1)
+		ptr = &s[i];
+	else
+		ptr = '\0'
 
 	return (ptr);
 }
