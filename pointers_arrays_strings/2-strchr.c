@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
  * _strchr - locates character c in string s
@@ -10,6 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+	int length = _strlen(s);
 	char *ptr;
 
 	if (c != '\0')
@@ -24,7 +26,7 @@ char *_strchr(char *s, char c)
 
 	}
 	else
-		ptr = '\0';
+		ptr = &s[length];
 
 	return (ptr);
 }
