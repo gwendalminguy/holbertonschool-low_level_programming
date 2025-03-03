@@ -6,6 +6,8 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [help.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/help.c), a function calling for help forever.
 
+* [help_ascii.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/help_ascii.c), a function calling for help forever in ASCII art.
+
 * [0-reset_to_98.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/0-reset_to_98.c), a function updating a pointer to point to 98.
 
 * [1-swap.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/1-swap.c), a function swapping the values of two integers.
@@ -49,3 +51,19 @@ This project is about learning to use pointers, and to manipulate arrays and str
 * [100-rot13.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-rot13.c), a function encoding a string using rot13 with only one 'if' statement.
 
 * [101-print_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-print_number.c), a function printing any integer with putchar only.
+
+* [0-memset.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/0-memset.c), a function filling n first bytes of memory pointed to with constant byte.
+
+* [1-memcpy.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/1-memcpy.c), a function copying n first bytes from source to destination.
+
+* [2-strchr.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/2-strchr.c), a function locating a character in a string.
+
+* [3-strspn.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/3-strspn.c), a function getting the length of a string matching with a set of characters.
+
+* [4-strpbrk.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/4-strpbrk.c), a function getting the first occurance from a set of characters in a string.
+
+* [5-strstr.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/5-strstr.c), a function getting the first occurance of a substring in another.
+
+* [7-print_chessboard.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/7-print_chessboard.c), a function printing a chessboard.
+
+* [8-print_diagsums.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/8-print_diagsums.c), a function printing the sum of each diagonal of a square matrix of integers.
