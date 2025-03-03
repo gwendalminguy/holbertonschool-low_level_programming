@@ -32,9 +32,6 @@ char *_strpbrk(char *s, char *accept)
 			break;
 	}
 
-	if (compare == 0)
-		i++;
-
 	ptr = &s[i];
 
 	return (ptr);
