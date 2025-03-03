@@ -35,7 +35,7 @@ char *_strpbrk(char *s, char *accept)
 	if (compare == 1)
 		ptr = &s[i];
 	else
-		ptr = '\0'
+		ptr = '\0';
 
 	return (ptr);
 }
