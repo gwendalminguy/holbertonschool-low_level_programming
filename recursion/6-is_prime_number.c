@@ -13,24 +13,24 @@ int is_prime_number(int n)
 	if (n < 2 || n % 2 == 0)
 		return (0);
 	else
-		return (increment(n, 3));
+		return (increment_divisor(n, 3));
 
 }
 
 /**
- * increment - tests all pertinent divisors for n
+ * increment_divisor - tests all pertinent divisors for n
  * @n: integer to test
  * @i: divisor
  *
  * Return: 1 if n is prime ; 0 otherwise
  */
-int increment(int n, int i)
+int increment_divisor(int n, int i)
 {
 	if (n % i == 0)
 		return (0);
 	else if (i * i - 1 > n)
 		return (1);
 	else
-		return (increment(n, i + 2));
+		return (increment_divisor(n, i + 2));
 }
 
