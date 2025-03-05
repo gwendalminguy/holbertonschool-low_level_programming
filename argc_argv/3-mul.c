@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +6,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0
+ * Return: 1 if arguments are not exactly two integers ; 0 otherwise
  */
 int main(int argc, char **argv)
 {

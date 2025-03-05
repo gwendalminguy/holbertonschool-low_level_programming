@@ -6,7 +6,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0
+ * Return: 1 if any argument is not an integer ; 0 otherwise
  */
 int main(int argc, char **argv)
 {
