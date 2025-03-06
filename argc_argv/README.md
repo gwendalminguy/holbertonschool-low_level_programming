@@ -12,3 +12,5 @@ This project is about learning to use command-line arguments.
 
 * [4-add.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/argc_argv/4-add.c), a program printing the sum of all numbers given as arguments.
 
+* [100-change.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/argc_argv/100-change.c), a program printing the minimum number of coins to make change for any given amount of money.
+
