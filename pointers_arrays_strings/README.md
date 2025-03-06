@@ -68,4 +68,6 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [8-print_diagsums.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/8-print_diagsums.c), a function printing the sum of each diagonal of a square matrix of integers.
 
+* [100-set_string.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-set_string.c), a function setting the value of a pointer to a char.
+
 * [101-crackme_password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme_password), the valid password for [crackme2](https://github.com/hs-hq/0x06.c/blob/main/crackme2) file.
