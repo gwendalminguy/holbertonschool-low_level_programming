@@ -21,9 +21,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	argument = atoi(argv[1]);
-	
+
 	if (*cents < 0)
 	{
 		printf("0\n");
