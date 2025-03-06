@@ -13,7 +13,7 @@ int change(int value, int *cents);
 int main(int argc, char **argv)
 {
 	int quarter, dime, nickel, two, penny;
-	int argument = atoi(argv[1]);
+	int argument;
 	int *cents = &argument;
 
 	if (argc != 2)
@@ -21,7 +21,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	else if (*cents < 0)
+	
+	argument = atoi(argv[1]);
+	
+	if (*cents < 0)
 	{
 		printf("0\n");
 		return (0);
