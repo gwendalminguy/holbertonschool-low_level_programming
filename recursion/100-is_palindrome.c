@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include "2-strlen.c"
 
 /**
  * is_palindrome - determines if s is a palindrome or not
@@ -11,12 +12,7 @@ int is_palindrome(char *s)
 {
 	int i = 0;
 	int start = 0;
-	int end;
-
-	while (s[i] != '\0')
-		i++;
-
-	end = i - 1;
+	int end = _strlen(s) - 1;
 
 	if (end > 0)
 		return (compare(s, start, end));
