@@ -18,3 +18,5 @@ This project is about learning to use recursion.
 
 * [6-is_prime_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/6-is_prime_number.c), a function checking whether n is a prime number or not.
 
+* [100-is_palindrome.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/100-is_palindrome.c), a function checking whether s is a palindrome or not.
+
