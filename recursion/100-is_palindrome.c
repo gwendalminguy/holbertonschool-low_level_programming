@@ -53,6 +53,6 @@ int length(char *s, int count)
 	if (s[count] == '\0')
 		return (count);
 	else
-		return length(s, count + 1);
+		return (length(s, count + 1));
 }
 
