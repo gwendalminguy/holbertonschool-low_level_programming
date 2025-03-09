@@ -20,3 +20,5 @@ This project is about learning to use recursion.
 
 * [100-is_palindrome.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/100-is_palindrome.c), a function checking whether s is a palindrome or not.
 
+* [101-wildcmp.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/101-wildcmp.c), a function comparing two strings with wildcards.
+
