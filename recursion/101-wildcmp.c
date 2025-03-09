@@ -34,7 +34,7 @@ int compare_strings(char *s1, char *s2, int i, int j)
 		if (compare_strings(s1, s2, i + 1, j + 1) == 1)
 			return (1);
 	}
-	
+
 	if (s2[j - 1] == '*' && s1[i] != '\0')
 		return (compare_strings(s1, s2, i + 1, j));
 	else
