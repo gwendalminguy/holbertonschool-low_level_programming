@@ -23,6 +23,7 @@ int wildcmp(char *s1, char *s2)
  */
 int compare_strings(char *s1, char *s2, int i, int j)
 {
+	/* Checking if the end of both strings is reached */
 	if (s1[i] == '\0' && s2[j] == '\0')
 		return (1);
 
@@ -31,10 +32,12 @@ int compare_strings(char *s1, char *s2, int i, int j)
 
 	if (s1[i] == s2[j])
 	{
+		/* Checking if end of s1 matches end of s2 */
 		if (compare_strings(s1, s2, i + 1, j + 1) == 1)
 			return (1);
 	}
 
+	/* Ignoring unmatching character when wildcard used */
 	if (s2[j - 1] == '*' && s1[i] != '\0')
 		return (compare_strings(s1, s2, i + 1, j));
 	else
