@@ -12,7 +12,7 @@ int increment_sqrt(int n, int i);
 int is_prime_number(int n);
 int increment_divisor(int n, int i);
 int is_palindrome(char *s);
-int compare(char *s, int start, int end);
+int compare_characters(char *s, int start, int end);
 int length(char *s, int count);
 int wildcmp(char *s1, char *s2);
 int compare_strings(char *s1, char *s2, int i, int j);
