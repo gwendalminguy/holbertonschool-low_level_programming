@@ -35,11 +35,11 @@ int **alloc_grid(int width, int height)
 				free(grid[row]);
 				row--;
 			}
-			
+
 			free(grid);
 			return (NULL);
 		}
-		
+
 		/* Filling the whole grid with 0 */
 		for (col = 0 ; col < width ; col++)
 		{
