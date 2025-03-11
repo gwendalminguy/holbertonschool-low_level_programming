@@ -11,3 +11,5 @@ This project is about learning to allocate and free more memory dynamically.
 * [2-calloc.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_malloc_free/2-calloc.c), a function allocating memory for an array of any given number of elements.
 
 * [3-array_range.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_malloc_free/3-array_range.c), a function creating an array of integers from min to max.
+
+* [100-realloc.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_malloc_free/100-realloc.c), a function reallocating a memory block using malloc and free.
