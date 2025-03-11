@@ -60,7 +60,7 @@ int change(int value, int *cents)
 	}
 	else if (*cents >= value && value == 1)
 	{
-		n = 1;
+		n = *cents;
 		*cents = 0;
 		return (n);
 	}
