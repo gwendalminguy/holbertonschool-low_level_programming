@@ -11,9 +11,9 @@ char **strtow(char *str)
 {
 	char **array;
 	int i, j;
-	int index = 0;
 	int length = 0;
 	int words = 0;
+	int index = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -24,7 +24,7 @@ char **strtow(char *str)
 	for (i = 0 ; i < length ; i++)
 	{
 		/* Counting number of words */
-		if (str[i] != ' ' && str[i] != '\0' && (i == 0 || str[i - 1] == ' '))
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 			words++;
 	}
 
