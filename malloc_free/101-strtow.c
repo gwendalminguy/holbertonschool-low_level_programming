@@ -17,7 +17,7 @@ char **strtow(char *str)
 	int words = 0;
 	int characters = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 
 	while (str[total] != '\0')
