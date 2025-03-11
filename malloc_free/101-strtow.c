@@ -35,7 +35,7 @@ char **strtow(char *str)
 	}
 
 	/* Allocating memory for the array */
-	array = malloc(sizeof(char *) * words);
+	array = malloc(sizeof(char *) * (words + 1));
 
 	if (array == NULL)
 		return (NULL);
@@ -48,7 +48,7 @@ char **strtow(char *str)
 			j = 0;
 
 			/* Counting characters for the word */
-			while (str[i + j] != ' ' || str[i + j] == 0)
+			while (str[i + j] != ' ' && str[i + j] != '\0')
 				j++;
 
 			length = j;
@@ -81,6 +81,10 @@ char **strtow(char *str)
 			index++;
 		}
 	}
+
+	array[index] = malloc(sizeof(char));
+
+	array[index] = NULL;
 
 	return (array);
 }
