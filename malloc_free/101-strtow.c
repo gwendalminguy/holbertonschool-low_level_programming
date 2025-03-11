@@ -31,7 +31,7 @@ char **strtow(char *str)
 
 		/* Returning NULL if no word found */
 		if (words == 0)
-			return (NULL)
+			return (NULL);
 
 		/* Counting number of characters */
 		if (str[i] != ' ' && str[i] != '\0')
