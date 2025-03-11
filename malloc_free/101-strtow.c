@@ -29,14 +29,14 @@ char **strtow(char *str)
 		if (str[i] != ' ' && str[i] != '\0' && (i == 0 || str[i - 1] == ' '))
 			words++;
 
-		/* Returning NULL if no word found */
-		if (words == 0)
-			return (NULL);
-
 		/* Counting number of characters */
 		if (str[i] != ' ' && str[i] != '\0')
 			characters++;
 	}
+
+	/* Returning NULL if no word found */
+	if (words == 0)
+		return (NULL);
 
 	/* Allocating memory for the array */
 	array = malloc(sizeof(char *) * (words + 1));
