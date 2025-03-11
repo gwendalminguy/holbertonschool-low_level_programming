@@ -15,7 +15,6 @@ char **strtow(char *str)
 	int length = 0;
 	int total = 0;
 	int words = 0;
-	int characters = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -29,9 +28,6 @@ char **strtow(char *str)
 		if (str[i] != ' ' && str[i] != '\0' && (i == 0 || str[i - 1] == ' '))
 			words++;
 
-		/* Counting number of characters */
-		if (str[i] != ' ' && str[i] != '\0')
-			characters++;
 	}
 
 	/* Returning NULL if no word found */
@@ -49,13 +45,11 @@ char **strtow(char *str)
 		/* Detecting the begining of a word */
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
-			j = 0;
+			length = 0;
 
 			/* Counting characters for the word */
-			while (str[i + j] != ' ' && str[i + j] != '\0')
-				j++;
-
-			length = j;
+			while (str[i + length] != ' ' && str[i + length] != '\0')
+				length++;
 
 			/* Allocating memory for the word */
 			array[index] = malloc(sizeof(char) * (length + 1));
@@ -71,7 +65,6 @@ char **strtow(char *str)
 				free(array);
 				return (NULL);
 			}
-
 			j = 0;
 
 			/* Copying the word */
@@ -80,13 +73,10 @@ char **strtow(char *str)
 				array[index][j] = str[i + j];
 				j++;
 			}
-
 			array[index][j] = '\0';
 			index++;
 		}
 	}
-
-	array[index] = malloc(sizeof(char));
 
 	array[index] = NULL;
 
