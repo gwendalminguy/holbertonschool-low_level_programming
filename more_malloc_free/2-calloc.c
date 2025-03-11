@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array of nmemb elements
- * @nmemb: number of elements in array
+ * _calloc - allocates memory for an array of any given number of elements
+ * @nmemb: number of elements
  * @size: size of each element
  *
  * Return: pointer to allocated memory
