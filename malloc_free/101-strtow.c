@@ -13,24 +13,21 @@ char **strtow(char *str)
 	int i, j;
 	int index = 0;
 	int length = 0;
-	int total = 0;
 	int words = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[total] != '\0')
-		total++;
+	while (str[length] != '\0')
+		length++;
 
-	for (i = 0 ; i < total ; i++)
+	for (i = 0 ; i < length ; i++)
 	{
 		/* Counting number of words */
 		if (str[i] != ' ' && str[i] != '\0' && (i == 0 || str[i - 1] == ' '))
 			words++;
-
 	}
 
-	/* Returning NULL if no word found */
 	if (words == 0)
 		return (NULL);
 
@@ -45,9 +42,8 @@ char **strtow(char *str)
 		/* Detecting the begining of a word */
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
-			length = 0;
-
 			/* Counting characters for the word */
+			length = 0;
 			while (str[i + length] != ' ' && str[i + length] != '\0')
 				length++;
 
@@ -65,9 +61,9 @@ char **strtow(char *str)
 				free(array);
 				return (NULL);
 			}
-			j = 0;
 
 			/* Copying the word */
+			j = 0;
 			while (j < length)
 			{
 				array[index][j] = str[i + j];
@@ -77,8 +73,6 @@ char **strtow(char *str)
 			index++;
 		}
 	}
-
 	array[index] = NULL;
-
 	return (array);
 }
