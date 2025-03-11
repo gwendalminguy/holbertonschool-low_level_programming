@@ -63,12 +63,9 @@ char **strtow(char *str)
 			}
 
 			/* Copying the word */
-			j = 0;
-			while (j < length)
-			{
+			for (j = 0 ; j < length ; j++)
 				array[index][j] = str[i + j];
-				j++;
-			}
+
 			array[index][j] = '\0';
 			index++;
 		}
