@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strtow - splits a string into words
+ * strtow - splits a string into words (don't try this at home)
  * @str: string to split
  *
  * Return: array of strings
