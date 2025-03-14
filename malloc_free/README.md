@@ -16,4 +16,4 @@ This project is about learning to allocate and free the memory dynamically.
 
 * [100-argstostr.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/malloc_free/100-argstostr.c), a function concatenating all command-line arguments into one string.
 
-* [101-strtow.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/malloc_free/101-strtow.c), a function splitting a fucking string into fucking words.
+* [101-strtow.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/malloc_free/101-strtow.c), a function splitting a string into words.
