@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		max = atoi(argv[1]);
 	else
 	{
-		printf("Usage: ./7-print_prime_numbers [number]\n");
+		printf("Usage: ./7-print_prime_numbers [maximum]\n");
 		return (1);
 	}
 
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 
 
 /**
- * print_prime_numbers - prints all prime numbers up to max
+ * print_prime_numbers - prints all prime numbers up to a specified maximum
  * @max: maximum integer
  */
 void print_prime_numbers(unsigned long long int max)
