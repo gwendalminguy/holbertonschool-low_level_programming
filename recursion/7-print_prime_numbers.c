@@ -7,7 +7,7 @@ int is_prime_number(unsigned long long int n);
 int increment_divisor(unsigned long long int n, int i);
 
 /**
- * main - prints all prime numbers and program runtime
+ * main - prints all prime numbers up to a given limit and program runtime
  * @argc: number of arguments
  * @argv: argument
  *
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	unsigned long long int max;
 
 	if (argc == 2)
-		max = atoi(argv[1]);
+		max = atoll(argv[1]);
 	else
 	{
 		printf("Usage: ./7-print_prime_numbers [maximum]\n");
