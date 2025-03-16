@@ -6,11 +6,11 @@ int is_perfect_number(unsigned long long int n);
 int *find_divisors(unsigned long long int n);
 
 /**
- * main - ...
+ * main - determines if n is a perfect number
  * @argc: number of arguments
  * @argv: number to analyze
  *
- * Return: 1 if ... ; 0 otherwise
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
@@ -29,8 +29,6 @@ int main(int argc, char **argv)
 	}
 }
 
-
-
 /**
  * is_perfect_number - determines if n is a perfect number
  * @n: integer
@@ -41,8 +39,8 @@ int is_perfect_number(unsigned long long int n)
 {
 	int *divisors;
 	unsigned long long int total = 0;
-	unsigned long long int length = 0;
-	unsigned long long int i;
+	int length = 0;
+	int i;
 
 	if (is_prime_number(n) || n < 2)
 		return (0);
@@ -64,12 +62,10 @@ int is_perfect_number(unsigned long long int n)
 		return (1);
 	else
 	{
-		printf("%llu\n", total);
+		printf("Sum: %llu\n", total);
 		return (0);
 	}
 }
-
-
 
 /**
  * find_divisors - finds all divisors of n except itself
@@ -79,7 +75,8 @@ int is_perfect_number(unsigned long long int n)
  */
 int *find_divisors(unsigned long long int n)
 {
-	unsigned long long int i, j = 0;
+	unsigned long long int i;
+	int j = 0;
 	int *array;
 
 	array = malloc(sizeof(int));
