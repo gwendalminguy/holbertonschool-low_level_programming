@@ -6,7 +6,7 @@
  *
  * Return: 1 if n is prime ; 0 otherwise
  */
-int is_prime_number(int n)
+int is_prime_number(unsigned long long int n)
 {
 	if (n == 2)
 		return (1);
@@ -24,7 +24,7 @@ int is_prime_number(int n)
  *
  * Return: 1 if n is prime ; 0 otherwise
  */
-int increment_divisor(int n, int i)
+int increment_divisor(unsigned long long int n, int i)
 {
 	if (n % i == 0)
 		return (0);
