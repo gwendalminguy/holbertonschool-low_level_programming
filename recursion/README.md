@@ -20,7 +20,8 @@ This project is about learning to use recursion.
 
 * [7-print_prime_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/7-print_prime_numbers.c), a program printing all prime numbers from 2 to a maximum specified as command-line argument.
 
+* [8-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/8-is_perfect_number.c), a program ckecking whether n is a perfect number or not.
+
 * [100-is_palindrome.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/100-is_palindrome.c), a function checking whether s is a palindrome or not.
 
 * [101-wildcmp.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/101-wildcmp.c), a function comparing two strings with wildcards.
-
