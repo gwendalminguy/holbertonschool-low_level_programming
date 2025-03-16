@@ -18,9 +18,11 @@ This project is about learning to use recursion.
 
 * [6-is_prime_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/6-is_prime_number.c), a function checking whether n is a prime number or not.
 
-* [7-print_prime_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/7-print_prime_numbers.c), a program printing all prime numbers from 2 to a maximum specified as command-line argument.
+* [7-print_prime_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/7-print_prime_numbers.c), a function printing all prime numbers from 0 to a limit n.
 
-* [8-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/8-is_perfect_number.c), a program checking whether n is a perfect number or not.
+* [8-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/8-is_perfect_number.c), a function checking whether n is a perfect number or not.
+
+* [9-print_perfect_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/9-print_perfects_numbers.c), a function printing all perfect numbers from 0 to a limit n.
 
 * [100-is_palindrome.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/100-is_palindrome.c), a function checking whether s is a palindrome or not.
 
