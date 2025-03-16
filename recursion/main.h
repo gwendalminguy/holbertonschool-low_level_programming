@@ -16,5 +16,9 @@ int compare_characters(char *s, int start, int end);
 int length(char *s, int count);
 int wildcmp(char *s1, char *s2);
 int compare_strings(char *s1, char *s2, int i, int j);
+void print_prime_numbers(unsigned long long int max);
+int is_perfect_number(unsigned long long int n);
+int *find_divisors(unsigned long long int n);
+void print_perfect_numbers(unsigned long long int n);
 
 #endif
