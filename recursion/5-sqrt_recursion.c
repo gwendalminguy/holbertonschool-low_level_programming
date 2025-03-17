@@ -27,4 +27,3 @@ int increment_sqrt(int n, int i)
 	else
 		return (-1);
 }
-

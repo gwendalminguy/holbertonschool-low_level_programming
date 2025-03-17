@@ -55,4 +55,3 @@ int length(char *s, int count)
 	else
 		return (length(s, count + 1));
 }
-

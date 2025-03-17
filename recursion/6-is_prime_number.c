@@ -33,4 +33,3 @@ int increment_divisor(unsigned long long int n, int i)
 	else
 		return (increment_divisor(n, i + 2));
 }
-
