@@ -10,28 +10,15 @@
  */
 int is_perfect_number(unsigned long long int n)
 {
-	int *divisors;
-	unsigned long long int total = 0;
-	int length = 0;
-	int i;
+	unsigned long long int sum;
 
-	if (is_prime_number(n) || n < 2)
+	if (n < 2)
 		return (0);
 
-	divisors = find_divisors(n);
-
-	if (divisors == NULL)
-		return (-1);
-
-	while (divisors[length])
-		length++;
-
-	/* Adding all divisors of n */
-	for (i = 0 ; i < length ; i++)
-		total += divisors[i];
+	sum = add_divisors(n);
 
 	/* Checking if n is perfect */
-	if (total == n)
+	if (sum == n)
 		return (1);
 	else
 	{
@@ -41,32 +28,33 @@ int is_perfect_number(unsigned long long int n)
 }
 
 /**
- * find_divisors - finds all divisors of n except itself
+ * add_divisors - adds all divisors of n except itself
  * @n: integer
  *
- * Return: array of integers
+ * Return: sum of divisors
  */
-int *find_divisors(unsigned long long int n)
+unsigned long long int add_divisors(unsigned long long int n)
 {
 	unsigned long long int i;
-	int j = 0;
-	int *array;
-
-	array = malloc(sizeof(int));
-
-	if (array == NULL)
-		return (NULL);
+	unsigned long long int total = 0;
 
 	/* Getting all divisors of n */
-	for (i = 1 ; i < n ; i++)
+	for (i = 1 ; i * i <= n ; i++)
 	{
 		if (n % i == 0)
 		{
-			array = realloc(array, (j + 1) * sizeof(unsigned long long int));
-			array[j] = i;
-			j++;
+			if (i * i == n || i == 1)
+			{
+				total += i;
+			}
+			else
+			{
+				total += i;
+				total += n / i;
+				/* printf("%llu & %llu\n", i, n / i); */
+			}
 		}
 	}
 
-	return (array);
+	return (total);
 }
