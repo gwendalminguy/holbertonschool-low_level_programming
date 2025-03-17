@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the result of performs simple operations
+ * main - prints the result of simple operations
  * @argc: number of arguments
  * @argv: arguments
  *
