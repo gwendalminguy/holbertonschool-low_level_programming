@@ -67,4 +67,3 @@ int change(int value, int *cents)
 
 	return (0);
 }
-
