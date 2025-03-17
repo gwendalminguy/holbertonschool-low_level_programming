@@ -17,13 +17,13 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		printf("Error 98\n");
+		printf("Error\n");
 		exit(98);
 	}
 
 	if (get_op_func(argv[2]) == NULL)
 	{
-		printf("Error 99\n");
+		printf("Error\n");
 		exit(99);
 	}
 
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 
 	if ((!strcmp(argv[2], "/") || !strcmp(argv[2], "%")) && b == 0)
 	{
-		printf("Error 100\n");
+		printf("Error\n");
 		exit(100);
 	}
 
