@@ -20,4 +20,3 @@ void print_diagsums(int *a, int size)
 
 	printf("%d, %d\n", sum_a, sum_b);
 }
-
