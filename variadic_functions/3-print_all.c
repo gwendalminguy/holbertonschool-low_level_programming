@@ -6,48 +6,47 @@
  * print_char - prints any given char
  * @args: argument
  */
-va_list print_char(va_list args)
+void print_char(va_list args)
 {       
-	int argument = va_arg(args, int);
+	int character = va_arg(args, int);
 
-	printf("%c", argument);
-	return (args);
-}       
+	printf("%c", character);
+}
 
 /**
  * print_int - prints any given integer
  * @args: argument
  */
-va_list print_int(va_list args)
+void print_int(va_list args)
 {
-	int argument = va_arg(args, int);
+	int number = va_arg(args, int);
 
-	printf("%d", argument);
-	return (args);
+	printf("%d", number);
 }
 
 /**
  * print_float - prints any given float
  * @args: argument
  */
-va_list print_float(va_list args)
+void print_float(va_list args)
 {
-	float argument = va_arg(args, double);
+	float number = va_arg(args, double);
 
-	printf("%f", argument);
-	return (args);
-}               
+	printf("%f", number);
+}
 
 /**
  * print_string - prints any given string
  * @args: argument
  */
-va_list print_string(va_list args)
+void print_string(va_list args)
 {
-	char *argument = va_arg(args, char *);
+	char *string = va_arg(args, char *);
 
-	printf("%s", argument);
-	return (args);
+	if (string != NULL)
+		printf("%s", string);
+	else
+		printf("(nil)");
 }
 
 /**
@@ -69,21 +68,25 @@ void print_all(const char * const format, ...)
 	
 	va_start(args, format);
 
-	while (format[i] != '\0')
+	/* Going through each character of format */
+	while (format[i])
 	{
 		j = 0;
 
-		while (types[j].letter != '\0')
+		/* Going through each letter of types */
+		while (types[j].letter)
 		{
+			/* Getting the matching function */
 			if (format[i] == types[j].letter)
 			{
-				args = types[j].f(args);
+				types[j].f(args);
+				printf(" (i:%d, j:%d)", i, j);
 				break;
 			}
 
 			j++;
 		}
-			
+		
 		i++;
 	}
 
