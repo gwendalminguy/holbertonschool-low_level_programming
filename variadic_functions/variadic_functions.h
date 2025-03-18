@@ -12,8 +12,8 @@
  */
 typedef struct type
 {
-        char letter;
-        void (*f)(va_list);
+	char letter;
+	void (*f)(va_list);
 } type_t;
 
 void print_char(va_list args);
