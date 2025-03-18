@@ -53,6 +53,7 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
+	char *separator = "";
 	va_list args;
 	type_t types[] = {
 		{'c', print_char},
@@ -75,6 +76,8 @@ void print_all(const char * const format, ...)
 			/* Getting the matching function */
 			if (format[i] == types[j].letter)
 			{
+				printf("%s", separator);
+				separator = ", ";
 				types[j].f(args);
 				break;
 			}
