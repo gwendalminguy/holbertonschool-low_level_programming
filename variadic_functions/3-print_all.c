@@ -7,7 +7,7 @@
  * @args: argument
  */
 void print_char(va_list args)
-{       
+{
 	int character = va_arg(args, int);
 
 	printf("%c", character);
@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 		{'s', print_string},
 		{'\0', NULL}
 	};
-	
+
 	va_start(args, format);
 
 	/* Going through each character of format */
@@ -84,7 +84,7 @@ void print_all(const char * const format, ...)
 
 			j++;
 		}
-		
+
 		i++;
 	}
 
