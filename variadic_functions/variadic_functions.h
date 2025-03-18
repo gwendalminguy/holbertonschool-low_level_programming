@@ -7,8 +7,8 @@
 /**
  * struct type - ...
  *
- * @letter: given char
- * @type: matching type
+ * @letter: given character
+ * @f: matching function
  */
 typedef struct type
 {
