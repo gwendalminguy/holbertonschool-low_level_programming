@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -78,7 +76,6 @@ void print_all(const char * const format, ...)
 			if (format[i] == types[j].letter)
 			{
 				types[j].f(args);
-				printf(" (i:%d, j:%d)", i, j);
 				break;
 			}
 
