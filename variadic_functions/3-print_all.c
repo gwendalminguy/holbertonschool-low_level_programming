@@ -67,11 +67,11 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format[i])
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 
-		while (types[j].letter)
+		while (types[j].letter != '\0')
 		{
 			if (format[i] == types[j].letter)
 			{
