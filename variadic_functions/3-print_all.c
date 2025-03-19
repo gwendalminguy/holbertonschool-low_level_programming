@@ -4,9 +4,9 @@
  * print_char - prints any given char
  * @args: argument
  */
-void print_char(va_list args)
+void print_char(va_list *args)
 {
-	int character = va_arg(args, int);
+	int character = va_arg(*args, int);
 
 	printf("%c", character);
 }
@@ -15,9 +15,9 @@ void print_char(va_list args)
  * print_int - prints any given integer
  * @args: argument
  */
-void print_int(va_list args)
+void print_int(va_list *args)
 {
-	int number = va_arg(args, int);
+	int number = va_arg(*args, int);
 
 	printf("%d", number);
 }
@@ -26,9 +26,9 @@ void print_int(va_list args)
  * print_float - prints any given float
  * @args: argument
  */
-void print_float(va_list args)
+void print_float(va_list *args)
 {
-	float number = va_arg(args, double);
+	float number = va_arg(*args, double);
 
 	printf("%f", number);
 }
@@ -37,12 +37,9 @@ void print_float(va_list args)
  * print_string - prints any given string
  * @args: argument
  */
-void print_string(va_list args)
+void print_string(va_list *args)
 {
-	char *string = va_arg(args, char *);
-
-	if (string == NULL)
-		string = "(nil)";
+	char *string = va_arg(*args, char *);
 
 	printf("%s", string);
 }
@@ -80,7 +77,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				separator = ", ";
-				types[j].f(args);
+				types[j].f(&args);
 				break;
 			}
 
