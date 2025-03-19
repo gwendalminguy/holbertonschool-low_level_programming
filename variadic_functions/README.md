@@ -1,6 +1,6 @@
 ## Variadic Functions
 
-This project is about learning to use variadic functions.
+This project is about learning to use functions with a variable number of arguments.
 
 * [variadic_functions.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/variadic_functions/variadic_functions.h), the header file containing all structures and prototypes.
 
