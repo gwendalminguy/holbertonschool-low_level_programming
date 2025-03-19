@@ -54,7 +54,7 @@ void print_all(const char * const format, ...)
 	unsigned int j = 0;
 	char *separator = "";
 	va_list args;
-	type_t types[] = {
+	function_t functions[] = {
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
@@ -69,15 +69,15 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		/* Going through each letter of types */
-		while (types[j].letter != '\0')
+		/* Going through each id of functions */
+		while (functions[j].id != '\0')
 		{
 			/* Getting the matching function */
-			if (format[i] == types[j].letter)
+			if (format[i] == functions[j].id)
 			{
 				printf("%s", separator);
 				separator = ", ";
-				types[j].f(&args);
+				functions[j].fptr(&args);
 				break;
 			}
 

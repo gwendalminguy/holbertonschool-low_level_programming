@@ -11,11 +11,11 @@
  * @letter: given character
  * @f: matching function
  */
-typedef struct type
+typedef struct function
 {
-	char letter;
-	void (*f)(va_list *args);
-} type_t;
+	char id;
+	void (*fptr)(va_list *args);
+} function_t;
 
 void print_char(va_list *args);
 void print_int(va_list *args);
