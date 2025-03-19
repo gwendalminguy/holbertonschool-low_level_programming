@@ -67,12 +67,15 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
+	/* Going through each character of format */
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 
+		/* Going through each letter of types */
 		while (types[j].letter != '\0')
 		{
+			/* Getting the matching function */
 			if (format[i] == types[j].letter)
 			{
 				printf("%s", separator);
