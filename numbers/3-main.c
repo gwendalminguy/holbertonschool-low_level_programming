@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	unsigned long long int i;
 
 	if (argc != 2)
-		printf("Usage: ...\n");
+		printf("Usage: ./3-print_triangular_numbers [limit]\n");
 	else
 	{
 		n = atoll(argv[1]);

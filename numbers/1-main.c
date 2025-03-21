@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Usage: ./9-print_perfect_numbers [limit]\n");
+		printf("Usage: ./1-print_perfect_numbers [limit]\n");
 		return (1);
 	}
 	else
