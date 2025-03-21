@@ -11,3 +11,5 @@ This project is about learning to use functions with a variable number of argume
 * [2-print_strings.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/variadic_functions/2-print_strings.c), a function printing all strings it receives as arguments.
 
 * [3-print_all.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/variadic_functions/3-print_all.c), a function printing all arguments of any type it receives.
+
+* [100-hello_world.asm](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/variadic_functions/100-hello_world.asm), an assembly code printing "Hello, World".
