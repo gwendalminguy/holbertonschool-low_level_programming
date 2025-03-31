@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -11,7 +12,10 @@ void free_list(list_t *head)
 	void *temp;
 
 	if (head == NULL)
+	{
+		printf("Freed !\n");
 		exit(0);
+	}
 
 	while (current->next)
 	{
