@@ -16,7 +16,8 @@ void free_list(list_t *head)
 		temp = current->next;
 
 		/* Freeing current element */
-		free(current->str);
+		if (current->str)
+			free(current->str);
 		free(current);
 
 		/* Switching current element to next one */
@@ -24,6 +25,7 @@ void free_list(list_t *head)
 	}
 
 	/* Freeing last element */
-	free(current->str);
+	if (current->str)
+		free(current->str);
 	free(current);
 }
