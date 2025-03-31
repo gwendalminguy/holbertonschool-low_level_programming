@@ -12,7 +12,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new = NULL;
 	list_t *current = *head;
 	unsigned int i = 0;
 
@@ -20,7 +20,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[i])
 		i++;
 
-	/* Allocation enough memory for the new node */
+	/* Allocating enough memory for the new node */
 	new = malloc(i + 1 + sizeof(int) + sizeof(void *));
 
 	/* Checking if malloc failed */
