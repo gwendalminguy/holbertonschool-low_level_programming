@@ -10,6 +10,9 @@ void free_list(list_t *head)
 	list_t *current = head;
 	void *temp;
 
+	if (head == NULL)
+		exit(0);
+
 	while (current->next)
 	{
 		/* Saving address of next element */
