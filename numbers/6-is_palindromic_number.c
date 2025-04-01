@@ -20,24 +20,24 @@ int is_palindromic_number(unsigned long long int n)
 		len++;
 	}
 
-	/* Checking for parity of the number of digits */
-	if (len % 2 == 1)
-		parity = 1;
-
 	/* Checking if n is a palindromic number */
-	while (len > parity)
+	while (len > 1)
 	{
 		power = 1;
 
 		for (i = 0 ; i < len - 1 ; i++)
 			power *= 10;
 
+		/* Getting digit at the right */
 		a = n % 10;
+
+		/* Getting digit at the left */
 		b = n / power;
 
 		if (a != b)
 			return (0);
 
+		/* Updating n by removing right and left digits */
 		n = (n % power) / 10;
 		len -= 2;
 	}
