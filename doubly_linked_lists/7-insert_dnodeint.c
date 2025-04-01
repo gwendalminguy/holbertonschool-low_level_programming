@@ -32,18 +32,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	/* Inserting node at the end if index equals number of nodes */
 	if (current == NULL && i == idx)
 		return (add_dnodeint_end(h, n));
+	
 	/* Returning NULL if index larger than number of nodes */
 	else if (current == NULL)
 		return (NULL);
+	
 	/* Allocating memory for new node */
 	new = malloc(sizeof(dlistint_t));
+	
 	/* Returning NULL if malloc failed */
 	if (new == NULL)
 		return (NULL);
+	
 	/* Creating new node */
 	new->n = n;
 	new->prev = current->prev;
 	new->next = current;
+	
 	/* Updating previous and next nodes */
 	current->prev = new;
 	current = new->prev;
