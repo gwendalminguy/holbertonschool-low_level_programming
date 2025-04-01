@@ -2,6 +2,8 @@
 
 This project is about playing with numbers properties.
 
+## Files
+
 * [numbers.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/numbers.h), the header file containing all prototypes.
 
 * [0-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/0-is_perfect_number.c), a function checking whether n is a perfect number or not.
@@ -11,3 +13,16 @@ This project is about playing with numbers properties.
 * [2-is_triangular_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/2-is_triangular_number.c), a function checking whether n is a triangular number or not.
 
 * [3-print_triangular_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/3-print_triangular_numbers.c), a function printing all triangular numbers from 0 to a limit n.
+
+* [4-is_palindromic_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/4-is_palindromic_number.c), a function checking whether n is a palindromic number or not.
+
+* [5-print_palindromic_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/5-print_palindromic_numbers.c), a function printing all palindromic numbers from 0 to a limit n.
+
+## Properties
+
+| Types | Description  |
+| :-------- | :------- |
+| **Prime Number** | Number having exactly two divisors, 1 and itself. |
+| **Perfect Number** | Number equal to the sum of all its divisors except itself. |
+| **Triangular Number** | Number that can be arranged figuratively in an equilateral triangle. |
+| **Palindromic Number** | Number that reads the same when its digits are reversed. |
