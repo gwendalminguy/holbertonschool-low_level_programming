@@ -17,6 +17,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (h == NULL)
 		return (NULL);
 
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
 	while (current)
 	{
 		if (i == idx)
@@ -26,8 +29,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i++;
 	}
 
-	/* Returning NULL if index not found */
-	if (current == NULL)
+	/* Inserting node at the end if index equals number of nodes */
+	if (current == NULL && i == idx)
+		return (add_dnodeint_end(h, n));
+
+	/* Returning NULL if index larger than number of nodes */
+	else if (current == NULL)
 		return (NULL);
 
 	/* Allocating memory for new node */
@@ -37,10 +44,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 
+	/* Creating new node */
 	new->n = n;
 	new->prev = current->prev;
 	new->next = current;
 
+	/* Updating previous and next nodes */
 	current->prev = new;
 	current = new->prev;
 	current->next = new;
