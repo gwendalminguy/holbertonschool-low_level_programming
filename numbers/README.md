@@ -6,17 +6,21 @@ This project is about playing with numbers properties.
 
 * [numbers.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/numbers.h), the header file containing all prototypes.
 
-* [0-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/0-is_perfect_number.c), a function checking whether n is a perfect number or not.
+* [0-is_prime_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/0-is_prime_number.c), a function checking whether n is a prime number or not.
 
-* [1-print_perfect_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/1-print_perfects_numbers.c), a function printing all perfect numbers from 0 to a limit n.
+* [1-print_prime_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/1-print_prime_numbers.c), a function printing all prime numbers from 0 to a limit n.
 
-* [2-is_triangular_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/2-is_triangular_number.c), a function checking whether n is a triangular number or not.
+* [2-is_perfect_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/2-is_perfect_number.c), a function checking whether n is a perfect number or not.
 
-* [3-print_triangular_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/3-print_triangular_numbers.c), a function printing all triangular numbers from 0 to a limit n.
+* [3-print_perfect_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/3-print_perfects_numbers.c), a function printing all perfect numbers from 0 to a limit n.
 
-* [4-is_palindromic_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/4-is_palindromic_number.c), a function checking whether n is a palindromic number or not.
+* [4-is_triangular_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/4-is_triangular_number.c), a function checking whether n is a triangular number or not.
 
-* [5-print_palindromic_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/5-print_palindromic_numbers.c), a function printing all palindromic numbers from 0 to a limit n.
+* [5-print_triangular_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/5-print_triangular_numbers.c), a function printing all triangular numbers from 0 to a limit n.
+
+* [6-is_palindromic_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/6-is_palindromic_number.c), a function checking whether n is a palindromic number or not.
+
+* [7-print_palindromic_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/7-print_palindromic_numbers.c), a function printing all palindromic numbers from 0 to a limit n.
 
 ## Properties
 
