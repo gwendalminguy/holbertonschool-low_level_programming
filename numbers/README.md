@@ -4,6 +4,8 @@ This project is about playing with numbers properties.
 
 ## Files
 
+Each `function` file can be compiled with its matching `main` file to be used.
+
 * [numbers.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/numbers.h), the header file containing all prototypes.
 
 * [0-is_prime_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/0-is_prime_number.c), a function checking whether n is a prime number or not.
@@ -24,9 +26,9 @@ This project is about playing with numbers properties.
 
 ## Properties
 
-| Types | Description  |
+| **Types** | **Description** |
 | :-------- | :------- |
-| **Prime Number** | Number having exactly two divisors, 1 and itself. |
-| **Perfect Number** | Number equal to the sum of all its divisors except itself. |
-| **Triangular Number** | Number that can be arranged figuratively in an equilateral triangle. |
-| **Palindromic Number** | Number that reads the same when its digits are reversed. |
+| Prime Number | Number having exactly two divisors, 1 and itself. |
+| Perfect Number | Number equal to the sum of all its divisors except itself. |
+| Triangular Number | Number that can be arranged figuratively in an equilateral triangle. |
+| Palindromic Number | Number that reads the same when its digits are reversed. |
