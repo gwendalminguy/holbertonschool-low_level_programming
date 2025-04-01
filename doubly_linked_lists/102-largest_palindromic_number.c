@@ -10,21 +10,22 @@ int main(void)
 	int a = 0;
 	int b = 0;
 	int max = 1000;
-	int number = 0;
+	int result = 0;
 
 	for (a = 0 ; a < max ; a++)
 	{
 		for (b = 0 ; b < max ; b++)
 		{
-			if (is_palindromic_number(a * b) && a * b > number)
+			/* Updating result only if larger than the previous one */
+			if (is_palindromic_number(a * b) && a * b > result)
 			{
-				number = a * b;
-				/* printf("%i x %i = %i\n", a, b, number); */
+				result = a * b;
+				printf("%03i x %03i = %i\n", a, b, result);
 			}
 		}
 	}
 
-	printf("%i\n", number);
+	printf("Largest: %i\n", result);
 
 	return (0);
 }
