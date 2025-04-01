@@ -7,9 +7,8 @@
 int is_palindromic_number(unsigned long long int n)
 {
 	int len = 1;
-	int parity = 0;
 	int i = 0;
-	unsigned long long int a = 0, b = 0;
+	unsigned int right = 0, left = 0;
 	unsigned long long int power = 1;
 	unsigned long long int number = n;
 
@@ -29,12 +28,12 @@ int is_palindromic_number(unsigned long long int n)
 			power *= 10;
 
 		/* Getting digit at the right */
-		a = n % 10;
+		right = n % 10;
 
 		/* Getting digit at the left */
-		b = n / power;
+		left = n / power;
 
-		if (a != b)
+		if (right != left)
 			return (0);
 
 		/* Updating n by removing right and left digits */
