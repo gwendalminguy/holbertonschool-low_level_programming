@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * main - prints largest palindromic numbers from the product of two integers
+ * main - prints palindromic numbers from the product of two integers with three digits
  *
  * Return: 0
  */
@@ -64,12 +64,16 @@ int is_palindromic_number(int n)
 		for (i = 0 ; i < len - 1 ; i++)
 			power *= 10;
 
+		/* Getting digit at the right */
 		a = n % 10;
+
+		/* Getting digit at the left */
 		b = n / power;
 
 		if (a != b)
 			return (0);
 
+		/* Updating n by removing right and left digits */
 		n = (n % power) / 10;
 		len -= 2;
 	}
