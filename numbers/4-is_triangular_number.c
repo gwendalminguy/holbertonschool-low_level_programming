@@ -1,4 +1,4 @@
-#include <math.h>
+#include "numbers.h"
 
 /**
  * is_triangular_number - determines if n is a triangular number
