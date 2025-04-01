@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include "numbers.h"
 
 /**
@@ -15,7 +12,7 @@ int main(int argc, char **argv)
 	unsigned long long int n;
 
 	if (argc != 2)
-		printf("Usage: ./2-is_triangular_number [number]\n");
+		printf("Usage: ./4-is_triangular_number [number]\n");
 	else
 	{
 		n = atoll(argv[1]);

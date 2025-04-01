@@ -1,6 +1,4 @@
 #include "numbers.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - prints all perfect numbers up to a given limit
@@ -15,7 +13,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Usage: ./1-print_perfect_numbers [limit]\n");
+		printf("Usage: ./3-print_perfect_numbers [limit]\n");
 		return (1);
 	}
 	else

@@ -1,6 +1,4 @@
 #include "numbers.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - determines if n is a perfect number
@@ -15,7 +13,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Usage: ./0-is_perfect_number [number]\n");
+		printf("Usage: ./2-is_perfect_number [number]\n");
 		return (1);
 	}
 	else
