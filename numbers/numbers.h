@@ -15,5 +15,7 @@ int is_triangular_number(unsigned long long n);
 void print_triangular_numbers(unsigned long long int n);
 int is_palindromic_number(unsigned long long int n);
 void print_palindromic_numbers(unsigned long long int n);
+int is_powerful_number(unsigned long long int n);
+void print_powerful_numbers(unsigned long long int n);
 
 #endif
