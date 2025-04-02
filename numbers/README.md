@@ -24,6 +24,10 @@ Each `function` file can be compiled with its matching `main` file to be used.
 
 * [7-print_palindromic_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/7-print_palindromic_numbers.c), a function printing all palindromic numbers from 0 to a limit n.
 
+* [8-is_powerful_number.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/8-is_powerful_number.c), a function checking whether n is a powerful number or not.
+
+* [9-print_powerful_numbers.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/numbers/9-print_powerful_numbers.c), a function printing all powerful numbers from 0 to a limit n.
+
 ## Properties
 
 | **Types** | **Description** |
@@ -32,3 +36,4 @@ Each `function` file can be compiled with its matching `main` file to be used.
 | Perfect Number | Number equal to the sum of all its divisors except itself. |
 | Triangular Number | Number that can be arranged figuratively in an equilateral triangle. |
 | Palindromic Number | Number that reads the same when its digits are reversed. |
+| Powerful Number | ... |
