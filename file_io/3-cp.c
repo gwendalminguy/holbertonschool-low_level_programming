@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * main - ...
+ * main - copies the content of a file to another file
+ * @argc: number of arguments
+ * @argv: arguments
  *
  * Return: 0
  */
@@ -59,15 +61,15 @@ void cp(const char *src, const char *dest)
 	/* Reading from source file */
 	bytes_read = read(fd_src, buffer, 1024);
 
+	/* Handling read failure */
+	if (bytes_read == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
+		exit(98);
+	}
+
 	while (bytes_read > 0)
 	{
-		/* Handling read failure */
-		if (bytes_read == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
-			exit(98);
-		}
-
 		/* Writing to destination file */
 		bytes_written = write(fd_dest, buffer, bytes_read);
 
@@ -78,7 +80,14 @@ void cp(const char *src, const char *dest)
 			exit(99);
 		}
 
-		bytes_read -= bytes_written;
+		bytes_read = read(fd_src, buffer, 1024);
+
+		/* Handling read failure */
+		if (bytes_read == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
+			exit(98);
+		}
 	}
 
 	fd = close(fd_src);
