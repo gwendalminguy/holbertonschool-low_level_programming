@@ -39,7 +39,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/* Updating number of bytes written */
 	total_written += bytes_written;
-	}
 
 	close(fd);
 
