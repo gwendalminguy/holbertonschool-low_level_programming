@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (letters > 1024)
 		letters = 1024;
 
-	fd = open(filename, O_RDONLY, 444);
+	fd = open(filename, O_RDONLY, 400);
 
 	/* Handling open failure */
 	if (fd == -1)
