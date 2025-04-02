@@ -79,7 +79,7 @@ void cp(const char *src, const char *dest)
 		if (bytes_written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
-			exit(99);
+			exit(91);
 		}
 
 		bytes_read = read(fd_src, buffer, 1024);
