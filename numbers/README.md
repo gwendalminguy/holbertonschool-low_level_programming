@@ -32,8 +32,8 @@ Each `function` file can be compiled with its matching `main` file to be used.
 
 | **Types** | **Description** |
 | :-------- | :------- |
-| Prime Number | Number having exactly two divisors, 1 and itself. |
-| Perfect Number | Number equal to the sum of all its divisors except itself. |
-| Triangular Number | Number that can be arranged figuratively in an equilateral triangle. |
-| Palindromic Number | Number that reads the same when its digits are reversed. |
-| Powerful Number | ... |
+| [Prime Number](https://en.wikipedia.org/wiki/Prime_number) | Number having exactly two divisors, 1 and itself. |
+| [Perfect Number](https://en.wikipedia.org/wiki/Perfect_number) | Number equal to the sum of all its proper divisors. |
+| [Triangular Number](https://en.wikipedia.org/wiki/Triangular_number) | Number that can be arranged figuratively in an equilateral triangle. |
+| [Palindromic Number](https://en.wikipedia.org/wiki/Palindromic_number) | Number reading the same when its digits are reversed. |
+| [Powerful Number](https://en.wikipedia.org/wiki/Powerful_number) | Number whose prime divisors, when squared, are also divisors of this number. |
