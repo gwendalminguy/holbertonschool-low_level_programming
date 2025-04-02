@@ -10,16 +10,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char buffer[1024];
+	char buffer[2048];
 	ssize_t bytes_read = 0;
 	ssize_t bytes_written = 0;
 	ssize_t total_written = 0;
 
 	if (filename == NULL)
 		return (0);
-
-	if (letters > 1024)
-		letters = 1024;
 
 	fd = open(filename, O_RDONLY, 400);
 
@@ -32,19 +29,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/* Handling read failure */
 	if (bytes_read == -1)
 		return (0);
+		
+	/* Writing content of buffer to STDOUT */
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 
-	while (bytes_read > 0)
-	{
-		/* Writing content of buffer to STDOUT */
-		bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+	/* Handling write failure */
+	if (bytes_written == -1)
+		return (0);
 
-		/* Handling write failure */
-		if (bytes_written == -1)
-			return (0);
-
-		/* Updating number of bytes reand and written */
-		bytes_read -= bytes_written;
-		total_written += bytes_written;
+	/* Updating number of bytes written */
+	total_written += bytes_written;
 	}
 
 	close(fd);
