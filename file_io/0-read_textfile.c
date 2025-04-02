@@ -10,8 +10,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	const int NUMBER = letters;
-	char buffer[NUMBER];
+	char buffer[1024];
 	ssize_t bytes_read = 0;
 	ssize_t bytes_written = 0;
 	ssize_t total_written = 0;
