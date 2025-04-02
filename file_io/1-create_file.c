@@ -18,6 +18,9 @@ int create_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_RDWR | O_CREAT, 0600);
 
+	if (text_content == NULL)
+		return (1);
+
 	/* Handling open failure */
 	if (fd == -1)
 		return (-1);
@@ -26,7 +29,7 @@ int create_file(const char *filename, char *text_content)
 	while (text_content[bytes])
 		bytes++;
 
-	if (bytes != 0 && text_content != NULL)
+	if (bytes != 0)
 	{
 		/* Writing text_content to the file */
 		bytes_written = write(fd, text_content, bytes);
