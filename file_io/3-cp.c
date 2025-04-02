@@ -56,9 +56,8 @@ void cp(const char *src, const char *dest)
 	/* Handling open failure */
 	if (fd_dest == -1)
 	{
-
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", dest);
-		exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
+		exit(99);
 	}
 
 	/* Reading from source file */
