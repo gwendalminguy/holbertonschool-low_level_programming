@@ -25,11 +25,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	bytes_read = read(fd, buffer, letters);
-	
+
 	/* Handling read failure */
 	if (bytes_read == -1)
 		return (0);
-		
+
 	/* Writing content of buffer to STDOUT */
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 
