@@ -35,10 +35,7 @@ void cp(const char *src, const char *dest)
 {
 	int fd_src, fd_dest, fd;
 	char buffer[1024];
-	ssize_t bytes_read = 0;
-	ssize_t bytes_written = 0;
-
-	/* HELP this is way too long :( */
+	ssize_t bytes_read = 0, bytes_written = 0;
 
 	/* Opening source file */
 	fd_src = open(src, O_RDONLY, 0444);
@@ -63,13 +60,6 @@ void cp(const char *src, const char *dest)
 	/* Reading from source file */
 	bytes_read = read(fd_src, buffer, 1024);
 
-	/* Handling read failure */
-	if (bytes_read == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
-		exit(98);
-	}
-
 	while (bytes_read > 0)
 	{
 		/* Writing to destination file */
@@ -83,13 +73,13 @@ void cp(const char *src, const char *dest)
 		}
 
 		bytes_read = read(fd_src, buffer, 1024);
+	}
 
-		/* Handling read failure */
-		if (bytes_read == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
-			exit(98);
-		}
+	/* Handling read failure */
+	if (bytes_read == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
+		exit(98);
 	}
 
 	fd = close(fd_src);
