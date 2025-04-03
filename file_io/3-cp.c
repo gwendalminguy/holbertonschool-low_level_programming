@@ -37,8 +37,8 @@ void cp(const char *src, const char *dest)
 	char buffer[1024];
 	ssize_t bytes_read = 0, bytes_written = 0;
 
-	/* Opening source file */
 	fd_src = open(src, O_RDONLY, 0444);
+	fd_dest = open(dest, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	/* Handling open failure */
 	if (fd_src == -1)
@@ -46,11 +46,6 @@ void cp(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-
-	/* Opening destination file */
-	fd_dest = open(dest, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-
-	/* Handling open failure */
 	if (fd_dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
