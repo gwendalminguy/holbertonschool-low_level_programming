@@ -54,7 +54,7 @@ void cp(const char *src, const char *dest)
 	if (fd_dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
-		exit(99);
+		exit(91);
 	}
 
 	/* Reading from source file */
