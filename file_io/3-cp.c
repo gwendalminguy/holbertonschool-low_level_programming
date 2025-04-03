@@ -47,12 +47,14 @@ void cp(const char *src, const char *dest)
 	{
 		/* Writing to destination file */
 		bytes_written = write(fd_dest, buffer, bytes_read);
+		
 		/* Handling open/write failure */
 		if (fd_dest == -1 || bytes_written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
+		
 		/* Reading from source file */
 		bytes_read = read(fd_src, buffer, 1024);
 	}
