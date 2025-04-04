@@ -4,6 +4,8 @@ This project is about learning to use recursion.
 
 * [main.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/main.h), the header file containing all prototypes.
 
+* [_putchar.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/_putchar.c), the definition of a custom putchar function.
+
 * [0-puts_recursion.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/0-puts_recursion.c), a function printing a string.
 
 * [1-print_rev_recursion.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/recursion/1-print_rev_recursion.c), a function printing a string in reverse.
