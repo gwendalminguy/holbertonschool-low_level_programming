@@ -4,6 +4,8 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [main.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/main.h), the header file containing all prototypes.
 
+* [_putchar.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/_putchar.c), the definition of a custom putchar function.
+
 * [help.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/help.c), a function calling for help forever.
 
 * [help_ascii.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/help_ascii.c), a function calling for help forever in ASCII art.
