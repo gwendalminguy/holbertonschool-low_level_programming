@@ -1,31 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <time.h>
 
 /**
  * main - generates a six characters key from a given username
  * @argc: number of arguments
- * @argv: arguments
+ * @argv: argument
  *
- * Return: 0 if successful ; 1 otherwise
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
 	char key[6];
-	char *user;
+	char *username;
 	char *str = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	int length = 0, sum = 0, product = 1, seed = 0, square = 0, random = 0;
 	int i = 0, j = 0;
 
 	if (argc != 2)
 	{
-		printf("Usage: ./keygen [username]\n");
-		return (1);
+		dprintf(STDERR_FILENO, "Usage: ./103-keygen [username]\n");
+		exit(1);
 	}
 
-	user = argv[1];
-	length = strlen(user);
+	username = argv[1];
+	length = strlen(username);
 
 	/* First character of the key */
 	i = (length ^ 59) & 63;
@@ -33,14 +34,14 @@ int main(int argc, char **argv)
 
 	/* Second character of the key */
 	for (j = 0 ; j < length ; j++)
-		sum += user[j];
+		sum += username[j];
 
 	i = (sum ^ 79) & 63;
 	key[1] = str[i];
 
 	/* Third character of the key */
 	for (j = 0 ; j < length ; j++)
-		product *= user[j];
+		product *= username[j];
 
 	i = (product ^ 85) & 63;
 	key[2] = str[i];
@@ -48,8 +49,8 @@ int main(int argc, char **argv)
 	/* Fourth character of the key */
 	for (j = 0 ; j < length ; j++)
 	{
-		if (user[j] > seed)
-			seed = user[j];
+		if (username[j] > seed)
+			seed = username[j];
 	}
 
 	srand(seed ^ 14);
@@ -58,13 +59,13 @@ int main(int argc, char **argv)
 
 	/* Fifth character of the key */
 	for (j = 0 ; j < length ; j++)
-		square += user[j] * user[j];
+		square += username[j] * username[j];
 
 	i = (square ^ 239) & 63;
 	key[4] = str[i];
 
 	/* Sixth character of the key */
-	for (j = 0 ; user[0] > j ; j++)
+	for (j = 0 ; username[0] > j ; j++)
 		random = rand();
 
 	i = (random ^ 229) & 63;
