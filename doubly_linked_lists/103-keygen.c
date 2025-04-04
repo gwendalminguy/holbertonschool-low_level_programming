@@ -18,6 +18,8 @@ int main(int argc, char **argv)
 	int length = 0, sum = 0, product = 1, seed = 0, square = 0, random = 0;
 	int i = 0, j = 0;
 
+	if (argc != 2)
+		return (1);
 	str = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	user = argv[1];
 	length = strlen(user);
