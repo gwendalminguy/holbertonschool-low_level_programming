@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * flip_bits - ...
- * @n:
- * @m:
+ * flip_bits - computes number of bits to flip to get from a number to another
+ * @n: first number
+ * @m: second number
  *
- * Return:
+ * Return: number of bits to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -20,7 +20,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (flips & 1)
 			result += 1;
-		
+
 		flips = flips >> 1;
 
 	}
