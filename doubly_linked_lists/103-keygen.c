@@ -14,8 +14,8 @@ int main(int argc, char **argv)
 	char key[6];
 	char *user;
 	char *str = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
-	unsigned int length = 0, sum = 0, product = 1, seed = 0, square = 0, random = 0;
-	unsigned int i = 0, j = 0;
+	int length = 0, sum = 0, product = 1, seed = 0, square = 0, random = 0;
+	int i = 0, j = 0;
 
 	if (argc != 2)
 	{
