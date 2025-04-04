@@ -19,7 +19,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	bit = bit << index;
 
 	/* Reversing the bit */
-	bit = ~ bit;
+	bit = ~bit;
 
 	/* Disabling the bit in n */
 	*n = *n & bit;
