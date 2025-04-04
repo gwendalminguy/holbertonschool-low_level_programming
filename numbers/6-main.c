@@ -13,13 +13,12 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Usage: ./6-is_palindromic_number [number]\n");
-		return (1);
+		dprintf(STDERR_FILENO, "Usage: ./6-is_palindromic_number [number]\n");
+		exit(1);
 	}
-	else
-	{
-		n = atoll(argv[1]);
-		printf("%d\n", is_palindromic_number(n));
-		return (0);
-	}
+
+	n = atoll(argv[1]);
+	printf("%d\n", is_palindromic_number(n));
+	
+	return (0);
 }

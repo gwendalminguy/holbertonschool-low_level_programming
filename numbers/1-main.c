@@ -13,13 +13,12 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Usage: ./1-print_prime_numbers [limit]\n");
-		return (1);
+		dprintf(STDERR_FILENO, "Usage: ./1-print_prime_numbers [limit]\n");
+		exit(1);
 	}
-	else
-	{
-		n = atoll(argv[1]);
-		print_prime_numbers(n);
-		return (0);
-	}
+	
+	n = atoll(argv[1]);
+	print_prime_numbers(n);
+	
+	return (0);
 }

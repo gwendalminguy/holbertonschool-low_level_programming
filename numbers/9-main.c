@@ -13,12 +13,13 @@ int main(int argc, char **argv)
 	unsigned long long int i;
 
 	if (argc != 2)
-		printf("Usage: ./9-print_powerful_numbers [limit]\n");
-	else
 	{
-		n = atoll(argv[1]);
-		print_powerful_numbers(n);
+		dprintf("Usage: ./9-print_powerful_numbers [limit]\n");
+		exit(1);
 	}
+	
+	n = atoll(argv[1]);
+	print_powerful_numbers(n);
 
 	return (0);
 }
