@@ -4,6 +4,8 @@ This project is about learning to use more nested loops, and header files with p
 
 * [main.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/main.h), the header file containing all prototypes.
 
+* [_putchar.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loop/_putchar.c), the definition of a custom putchar function.
+
 * [0-isupper.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/0-isupper.c), a function checking for uppercase characters.
 
 * [1-isdigit.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/more_functions_nested_loops/1-isdigit.c), a function checking for numeric characters.
