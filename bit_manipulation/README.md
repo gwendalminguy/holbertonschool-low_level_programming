@@ -25,7 +25,7 @@ This project is about learning to manipulate bits by using bitwise operators.
 ## Bitwise Operators
 
 | **Name** | **Symbol** | **Description** |
-| :------- | :--------- | :-------------- |
+| :------: | :--------: | :-------------- |
 | NOT | `~` | Returns the complement of a bit. |
 | LEFT | `<<` | Shifts all the bits to the left. |
 | RIGHT | `>>` | Shifts all the bits to the right. |
