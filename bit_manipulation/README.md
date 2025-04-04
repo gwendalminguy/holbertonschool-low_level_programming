@@ -2,6 +2,8 @@
 
 This project is about learning to manipulate bits by using bitwise operators.
 
+## Files
+
 * [main.h](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/main.h), the header file.
 
 * [_putchar.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/bit_manipulation/_putchar.c), the definition of a custom putchar function.
@@ -19,3 +21,14 @@ This project is about learning to manipulate bits by using bitwise operators.
 * [5-flip_bits.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/5-flip_bits.c), a function counting number of bits to flip to get from a given number to another.
 
 * [101-password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/101-password), the valid password for [crackme3](https://github.com/hs-hq/0x13.c/blob/main/crackme3) file.
+
+## Bitwise Operators
+
+| **Name** | **Symbol** | **Description** |
+| :------- | :--------- | :-------------- |
+| NOT | `~` | Returns the complement of a bit. |
+| LEFT | `<<` | Shifts all the bits to the left. |
+| RIGHT | `>>` | Shifts all the bits to the right. |
+| AND | `&` | Returns 1 if both of the bits are 1. |
+| XOR | `^` | Returns 1 if the bits ar different. |
+| OR | `\|` | Returns 1 if one of the bits is 1. |
