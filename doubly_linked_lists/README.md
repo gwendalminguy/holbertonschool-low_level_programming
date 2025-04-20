@@ -26,4 +26,6 @@ This project is about learning to create and manipulate doubly linked lists and 
 
 * [102-result](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/doubly_linked_lists/102-result), a file containing the largest palindromic number from the product of two integers with three digits.
 
-* [103-keygen.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/doubly_linked_lists/103-keygen.c), a function generating a valid password from a given username for [crackme5](https://github.com/hs-hq/0x17.c/blob/main/crackme5) file.
+* [103-crackme5](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/doubly_linked_lists/103-crackme5), a crackme file.
+
+* [103-keygen.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/doubly_linked_lists/103-keygen.c), a function generating a valid password from a given username for [crackme5](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/doubly_linked_lists/103-crackme5) file.
