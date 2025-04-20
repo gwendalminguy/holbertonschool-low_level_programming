@@ -32,7 +32,9 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [100-atoi.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-atoi.c), a function converting the first number in a string to an integer.
 
-* [101-keygen.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-keygen.c), a function generating random valid passwords for [crackme](https://github.com/hs-hq/0x04.c/blob/main/101-crackme) file.
+* [101-crackme](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme), a crackme file.
+
+* [101-keygen.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-keygen.c), a function generating random valid passwords for [crackme](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme) file.
 
 * [0-strcat.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/0-strcat.c), a function concatenating two strings.
 
@@ -72,4 +74,6 @@ This project is about learning to use pointers, and to manipulate arrays and str
 
 * [100-set_string.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/100-set_string.c), a function setting the value of a pointer to a char.
 
-* [101-crackme_password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme_password), the valid password for [crackme2](https://github.com/hs-hq/0x06.c/blob/main/crackme2) file.
+* [101-crackme2](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme2), a crackme file.
+
+* [101-crackme_password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme_password), the valid password for [crackme2](https://github.com/gwendalminguy/holbertonschool-low_level_programming/blob/main/pointers_arrays_strings/101-crackme2) file.
