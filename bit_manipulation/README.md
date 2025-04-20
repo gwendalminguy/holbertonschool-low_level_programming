@@ -20,7 +20,9 @@ This project is about learning to manipulate bits by using bitwise operators.
 
 * [5-flip_bits.c](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/5-flip_bits.c), a function counting number of bits to flip to get from a given number to another.
 
-* [101-password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/101-password), the valid password for [crackme3](https://github.com/hs-hq/0x13.c/blob/main/crackme3) file.
+* [101-crackme3](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/101-crackme3), a crackme file.
+
+* [101-password](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/101-password), the valid password for [crackme3](https://github.com/gwendalminguy/holbertonschool-low_level_programming/tree/main/bit_manipulation/101-crackme3) file.
 
 ## Bitwise Operators
 
